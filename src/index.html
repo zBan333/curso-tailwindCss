@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,130 @@
     <title>tailwind css</title>
     <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
 </head>
-<body class="bg-gray-50"> 
-    <div class="container mx-auto px-4 py-8 bg-gray-50 dark:bg-gray-800">
-        <h6 class="dark:text-gray-50 font-bold mb-2">Componente card</h6>
-            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden">
-
-                <div class="w-full bg-gray-100 dark:bg-gray-900 p-4 border-b border-gray-200 dark:border-gray-500">
-                    <h4 class="font-bold dark:text-gray-50">Título do card</h4>
+<body class="bg-gray-50 dark:bg-gray-800"> 
+    <div class="container mx-auto px-4 py-8 bg-gray-50 dark:bg-gray-800 space-y-8">
+        <div>
+            <h6 class="dark:text-gray-50 font-bold mb-2">Componente Dropdown</h6>
+            <div>
+                <button class="bg-white border border-gray-300 focus:border-blue-500 rounded px-3 py-1 text-sm text-gray-700 placeholder-gray-300 focus:outline-none shadow flex items-center">
+                    Botao
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/>
+                    </svg>
+                      
+                </button>
+                <div class="bg-white border border-gray-200 py-1 shadow-md rounded"
+                    style="width: 200px;">
+                    <a href=""
+                    class="block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-100"
+                    >Link 1</a>
+                    <a href=""
+                    class="block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-100"
+                    >Link 2</a>
+                    <a href=""
+                    class="block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-100"
+                    >Link 3</a>
+                    <a href=""
+                    class="block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-100"
+                    >Link 4</a>
+                    <a href=""
+                    class="block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-100"
+                    >Link 5</a>
                 </div>
-
-                <div class="p-4 dark:text-gray-50">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, et? Quasi doloribus, atque dignissimos suscipit accusantium quibusdam, quam consectetur ab qui ullam aperiam! Voluptas rem minima aut pariatur cupiditate iusto.
-                </div>
-
-                <div class="w-full dark:text-gray-50 bg-gray-50 dark:bg-gray-900 p-3 border-t border-gray-100 dark:border-gray-500">
-                    rodapé
-                </div>
-            </div>  
+            </div>
         </div>
+        <div>
+            <h6 class="dark:text-gray-50 font-bold mb-2">Componente Buttons</h6>
+            <div class="space-y-4">
+                <input
+                type="text"
+                placeholder="small"
+                class="w-full bg-gray-50 border border-gray-300 focus:border-blue-500 rounded px-2 py-1 text-sm text-gray-700 placeholder-gray-300 focus:outline-none">
+
+                <input
+                type="text"
+                placeholder="medium"
+                class="w-full bg-gray-50 border border-gray-300 focus:border-blue-500 rounded px-3 py-2 text-base text-gray-700 placeholder-gray-300 focus:outline-none">
+
+                <input 
+                type="text"
+                placeholder="Digite seu nome com transition"
+                class="border border-gray-300 focus:border-blue-500 w-full px-3 py-2 bg-gray-50 rounded placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-20 transition duration-300 ease-in-out"
+                >
+                <input
+                type="text"
+                placeholder="large"
+                class="w-full bg-gray-50 border border-gray-300 focus:border-blue-500 rounded px-3 py-3 text-lg text-gray-700 placeholder-gray-300 focus:outline-none">
+
+                <input
+                type="text"
+                placeholder="large"
+                class="w-full bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-70 rounded px-3 py-3 text-lg text-gray-700 placeholder-gray-300 focus:outline-none">
+
+                <input
+                type="text"
+                placeholder="Digite seu nome com transition"
+                class="w-full bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-40 rounded px-3 py-3 text-lg text-gray-700 placeholder-gray-300 focus:outline-none transition duration-300 ease-in-out">
+
+            </div>
+        </div>
+        <div>
+            <h6 class="dark:text-gray-50 font-bold mb-2">Componente Bagde/tag</h6>
+            <div class="mb-2">
+                <div class="text-sm bg-green-100 inline-flex item-center px-1.5 py-0.5 rounded-md
+                text-green-800 font-medium">
+                    Ativo
+                </div>
+                <div class="text-sm bg-green-100 inline-flex item-center px-1.5 py-0.5 rounded-full
+                text-green-800 font-medium">
+                    Ativo
+                </div>
+            </div>
+            <div class="mb-2">
+                <div class="text-sm bg-red-100 inline-flex item-center px-1.5 py-0.5 rounded-md
+                text-red-800 font-medium">
+                    Inativo
+                </div>
+                <div class="text-sm bg-red-100 inline-flex item-center px-1.5 py-0.5 rounded-full
+                text-red-800 font-medium">
+                    Inativo
+                </div>
+            </div>
+            <div>
+                <div class="text-sm bg-yellow-100 inline-flex item-center px-1.5 py-0.5 rounded-md text-yellow-800 font-medium">
+                    Em Progresso
+                </div>
+                <div class="text-sm bg-yellow-100 inline-flex item-center px-1.5 py-0.5 rounded-full
+                text-yellow-800 font-medium">
+                    Em Progresso
+                </div>
+            </div>
+        </div>
+        <div>
+            <h6 class="dark:text-gray-50 font-bold mb-2">Componente Button</h6>
+            <button class="text-sm bg-blue-500 hover:bg-blue-600 px-4 py-1 rounded text-white shadow">
+                Save
+            </button>
+            <button class="tex-sm bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white shadow">
+                Save
+            </button>
+            <button class="tex-base bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded text-white shadow">
+                Save
+            </button>
+        </div>
+        <hr>
+        <h6 class="dark:text-gray-50 font-bold mb-2">Componente card</h6>
+        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+            <div class="w-full bg-gray-100 dark:bg-gray-900 p-4 border-b border-gray-200 dark:border-gray-500">
+                <h4 class="font-bold dark:text-gray-50">Título do card</h4>
+            </div>
+            <div class="p-4 dark:text-gray-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, et? Quasi doloribus, atque dignissimos suscipit accusantium quibusdam, quam consectetur ab qui ullam aperiam! Voluptas rem minima aut pariatur cupiditate iusto.
+            </div>
+            <div class="w-full dark:text-gray-50 bg-gray-50 dark:bg-gray-900 p-3 border-t border-gray-100 dark:border-gray-500">
+                rodapé
+            </div>
+        </div>  
     </div>
 </body>
 </html>
